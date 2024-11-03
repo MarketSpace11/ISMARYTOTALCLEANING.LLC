@@ -11,9 +11,9 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     emailjs.sendForm('service_xbrsts6', 'template_eht2dzq', this)  // 'template_eht2dzq' es tu Template ID
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
-            alert('Mensaje enviado correctamente');
+            alert('Message sent successfully');
         }, function(error) {
             console.log('FAILED...', error);
-            alert('Error al enviar el mensaje');
+            alert('Error sending message');
         });
 });
